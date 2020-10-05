@@ -6,3 +6,18 @@ GRANT ALL PRIVILEGES ON userdb.* TO 'username'@'localhost';
 
 mysql> CREATE USER 'root'@'%' IDENTIFIED BY 'root';
 mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+
+//
+
+When executing a query, a result object is returned:
+
+{
+  fieldCount: 0,
+  affectedRows: 14,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '\'Records:14  Duplicated: 0  Warnings: 0',
+  protocol41: true,
+  changedRows: 0
+}
