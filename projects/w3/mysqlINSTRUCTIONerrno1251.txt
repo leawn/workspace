@@ -21,3 +21,8 @@ When executing a query, a result object is returned:
   protocol41: true,
   changedRows: 0
 }
+
+
+WHY MONGO DB USES TOARRAY METHOD AND HOW IT WORKS IN THIS SYNTAX?
+
+dbo.collection('customers').find({}).toArray( (err, res) => {
